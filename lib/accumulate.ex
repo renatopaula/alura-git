@@ -14,7 +14,6 @@ defmodule Accumulate do
       [2, 4, 6]
 
   """
-
   @spec accumulate(list, (any -> any)) :: list
   def accumulate(list, fun) do
     Enum.map(list, fn x -> fun.(x) end)
